@@ -1,0 +1,130 @@
+<html>
+
+  <head>
+    <title> Movie Ticket Booking </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+      <section class="top-bar">
+
+        <div class="left-content">
+          <h1 class="title" style="font-size:27px;"> MovBook </h1>
+          <ul class="navigation">
+            <li><a href="home.html" style="padding-left: 10px;font-size:23px;"> Home </a></li>
+            <li><a href="#" style="font-size:23px;padding-left: 23px;"> Movies </a></li>
+            <li><a href="#" style="padding-left: 23px;font-size:23px;"> Theaters </a></li>
+          </ul>
+        </div>
+
+        <div class="right-content">
+          <ul class="navigation">
+            <li><a href="signup.html" style="padding-left: 10px;font-size:23px;"> SignUp </a></li>
+            <li><a href="#" style="padding-left: 23px;font-size:23px;"> SignIn </a></li>
+           
+          </ul>
+        </div>
+
+      </section>
+
+      <section class="main-container">
+        <div class="sidebar">
+            <form action="#">
+                <div class="sidebar-groups">
+                    <h2 class="sg-title" for="genre" id="genre" onchange="filterMovies()">Categories</h2>
+                    <input type="checkbox" id="adventure" name="adventure" value="adventure">
+                    <label for="adventure">Adventure</label><br>
+                    <input type="checkbox" id="action" name="action" value="action">
+                    <label for="action">Action</label><br>
+                    <input type="checkbox" id="animation" name="animation" value="animation">
+                    <label for="animation">Animation</label><br>
+                    <input type="checkbox" id="comedy" name="comedy" value="comedy">
+                    <label for="comedy">Comedy</label><br>
+                    <input type="checkbox" id="science" name="science" value="science">
+                    <label for="science">Science Fiction</label><br>
+                    <input type="checkbox" id="thriller" name="thriller" value="thriller">
+                    <label for="thriller">Thriller</label><br>
+                    <input type="checkbox" id="history" name="history" value="history">
+                    <label for="history">History</label><br>
+                    <input type="checkbox" id="documentary" name="documentary" value="documentary">
+                    <label for="documentary">Documentary</label><br>
+                    <input type="checkbox" id="fantasy" name="fantasy" value="fantasy">
+                    <label for="fantasy">Fantasy</label>
+                    <div id="movies-container">
+                        
+                      </div><br>
+
+                </div>
+                <div class="sidebar-groups">
+                    <h2 class="sg-title">Language</h2>
+                    <input type="checkbox" id="english" name="english" value="english">
+                    <label for="english">English</label><br>
+                    <input type="checkbox" id="spanish" name="spanish" value="spanish">
+                    <label for="spanish">Spanish</label><br>
+                    <input type="checkbox" id="hindi" name="hindi" value="hindi">
+                    <label for="hindi">Hindi</label><br>
+                </div>
+                <div class="sidebar-groups">
+                    <h2 class="sg-title">Time</h2>
+                    <input type="radio" id="morning" name="time" value="morning">
+                    <label for="morning">Morning</label><br>
+                    <input type="radio" id="night" name="time" value="night">
+                    <label for="night">Night</label><br>
+                </div><br>
+                <div class="sidebar-groups">
+                    <a href="#" class="btn-alt btn">Apply Filters</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="movies-container">
+          <div class="upcoming-img-box">
+              <img src="Tiger-3.jpg" alt="">
+              <p class="upcoming-title" >Upcoming Movie<br> <span id="countdown">10:00</span></p>
+              
+              <div class="buttons">
+                  <a href="book.html" class="btn-alt btn">Book Now</a>
+                  <a href="show.html" class="btn-alt btn">Available Movie</a>
+              </div>
+          </div>
+
+          <div class="current-movies">
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="ps.jpg" alt="">
+                </div>
+                <h3 class="movie-title">PS-2</h3>
+                <div class="booking">
+                    <a href="#" class="btn-alt btn">Buy Tickets</a>
+                </div>
+            </div>
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="kerla.jpg" alt="">
+                </div>
+                <h3 class="movie-title">Kerla</h3>
+                <div class="booking">
+                    <a href="#" class="btn-alt btn">Buy Tickets</a>
+                </div>
+            </div>
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="galaxy.jpg" alt="">
+                </div>
+                <h3 class="movie-title">Guardians of the Galaxy 3</h3>
+                <div class="booking">
+                    <a href="#" class="btn-alt btn">Buy Tickets</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="time.js"> </script>
+
+<script src="genre.js"> </script>
+  </body>
+</html>
