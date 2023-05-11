@@ -37,7 +37,7 @@
         <medium>Sold</medium>
       </li>
     </ul>
-    <div class="container">
+    <div class="container" id="seatForm" onsubmit="validateForm(event)">
       <div class="screen"></div>
 
       <div class="row">
@@ -112,7 +112,8 @@
        <br>
     
        <div class="but">
-        <button class="button buttons" type="submit" > Submit </button>
+        <button class="button buttons" type="submit" value="submit" > Submit </button>
+         <p id="error" style="color: red; display: none;">Please select at least one seat.</p>
     </div>
     <script src="script.js"></script>
   </body>
