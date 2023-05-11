@@ -30,6 +30,27 @@ function updateSelectedCount() {
   setMovieData(movieSelect.selectedIndex, movieSelect.value);
 }
 
+function validateForm(event) {
+  event.preventDefault();
+  var checkboxes = document.getElementsById('seat');
+  var selectedSeats = false;
+
+  for (var i = 0; i < checkboxes.length; i++) {
+    if (checkboxes[i].checked) {
+      selectedSeats = true;
+      break;
+    }
+  }
+
+  if (selectedSeats) {
+    // At least one seat is selected, submit the form
+    document.getElementById('seat').submit();
+  } else {
+    // No seat is selected, display error message
+    document.getElementById('error').style.display = 'block';
+  }
+}
+
 
 // Get data from localstorage and populate UI
 function populateUI() {
